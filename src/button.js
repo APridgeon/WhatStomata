@@ -56,7 +56,7 @@ export default class Button extends Phaser.GameObjects.Container {
             this.helpText.setVisible(false);
         },this);
 
-        this.cost = cost
+        this.cost = cost;
 
         this.scene.add.existing(this);
     }

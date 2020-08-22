@@ -5,7 +5,6 @@ export default class Stomata extends Phaser.GameObjects.Sprite {
         super(scene);
         this.scene = scene;
 
-
         //ANIMATIONS
 
         this.scene.anims.create({
@@ -59,15 +58,15 @@ export default class Stomata extends Phaser.GameObjects.Sprite {
             .setDepth(1);
 
         this.stomata.StomataState = "open";
-        this.stomata.prevStomataState = "open"
+        this.stomata.prevStomataState = "open";
         this.stomata.ABASignalling = false;
 
 
-        this.stomata.anims.playReverse('stomClosing')
+        this.stomata.anims.playReverse('stomClosing');
         this.stomata.once('animationcomplete', ()=>{
-            this.stomata.anims.play('stom')
-        })
+            this.stomata.anims.play('stom');
+        });
 
         this.scene.add.existing(this);
-    }
-}   
+    };
+};
