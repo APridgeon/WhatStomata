@@ -67,6 +67,7 @@ export default class Stomata extends Phaser.GameObjects.Sprite {
             this.stomata.anims.play('stom');
         });
 
+
         this.scene.add.existing(this);
     };
 };
